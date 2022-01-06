@@ -13,6 +13,7 @@ describe 'FGTS' do
         it 'calculo da multa na opção aniversário' do
             vlSaque = (vlSaldo * 0.40)
             puts "Saque Multa FGTS = #{vlSaque}"
+            expect(vlSaque).to eq 67600
         end
     end
     
